@@ -93,7 +93,7 @@ It seems pretty clear here that many states are either red or blue, and some hav
 
 Next we will examine the most common words tweeted by each party. Looking at dataframes for both of the two major parties (sorry Independents!) we can get a word count for all tweets and visualize this with wordclouds.
 
-<img src="images/top_words_both_parties2.png" />
+<img src="images/top_words_both_parties.png" />
 
 Tweeting heavily involves the use of hashtags. Hashtags act as both a way to tag a trend in both an active way (ex: "I just had 3 tacos #TacoTuesday") or passively by referencing a trend (ex: "It's Friday, why is "TacoTuesday trending on Twitter right now?"). They can also be used to convey the mood or sentiment of the user. As a separate analysis, let's look at the top hashtags using a wordcloud:
 
