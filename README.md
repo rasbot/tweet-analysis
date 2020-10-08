@@ -37,9 +37,9 @@ Before any analysis can happen, the tweet data needs some cleaning. As stated be
 
 #### Cleaning
 
-<img src="images/cleaning.jpg" width="400" height="400"/>
-
----
+<div align="center">
+    <img src="images/cleaning.jpg" width="400" height="400"/>
+</div>
 
 A few transformations were needed to start an analysis. The pipeline for cleaning the dataset was as follows:
 
@@ -71,9 +71,12 @@ One issue mentioned above is that a lot of tweets contain misspellings and abbre
 
 Twitter usage for senators took time to ramp up, and looking at mean monthly tweet counts for all senators shows a significant increase from about 2013 and on. Half of the tweets occurred after 2014-09, as shown below.
 
-<img src="images/Half_tweets.png" />
+<div align="center">
+    <img src="images/Half_tweets.png" width="1000" height="auto"/>
+</div>
 
-Now let's look at how often each party tweets. This will vary greatly due to how often each senator tweets, and what events are happening in their districts, nationally, or globaly. The number of tweets per some unit of time can be aggregated in differnt intervals, such as daily, weekly, monthly, or yearly. Daily and weekly look too noisy, whereas yearly isn't granular enough. So, looking at a plot of the mean tweets by each party per month looks like:
+
+Now let's look at how often each party tweets. This will vary greatly due to how often each senator tweets, and what events are happening in their districts, nationally, or globally. The number of tweets per some unit of time can be aggregated in different intervals, such as daily, weekly, monthly, or yearly. Daily and weekly look too noisy, whereas yearly isn't granular enough. So, looking at a plot of the mean tweets by each party per month looks like:
 
 <img src="images/tweets_per_month_RD.png" />
 
@@ -81,9 +84,13 @@ Republicans ramped up their tweet numbers until the 2016 election, where afterwa
 
 What does this look like geographically? Each state has two senators, and they can be of either party (or a 3rd party). Let's look at how often each state tweets for each party:
 
-<img src="images/geo_r_tweets_mo.png" />
+<div align="center">
+    <img src="images/geo_r_tweets_mo.png" width="1200" height="auto"/>
+</div>
 
-<img src="images/geo_d_tweets_mo.png" />
+<div align="center">
+    <img src="images/geo_d_tweets_mo.png" width="1200" height="auto"/>
+</div>
 
 It seems pretty clear here that many states are either red or blue, and some have a mix of Republican and Democrat senators. We can see this a little more clearly by looking at all states for both parties:
 
@@ -117,7 +124,7 @@ Looking at negative, neutral, and positive, we can compare how each party tweets
 
 <img src="images/Polarity_count.png" />
 
-It looks like Democrats tweet more negatively and positively, whereas Republicans tweet more neturally than their respective party. Looking at a mean value across the entire dataset is not very revealing. Sentiment can reveal insights about the timeframe of the tweets on a more granular level, but even on a single day it is not uncommon for a senator to tweet both positively and negatively, such as:
+It looks like Democrats tweet more negatively and positively, whereas Republicans tweet more neutrally than their respective party. Looking at a mean value across the entire dataset is not very revealing. Sentiment can reveal insights about the time-frame of the tweets on a more granular level, but even on a single day it is not uncommon for a senator to tweet both positively and negatively, such as:
 
 <img src="images/amy_polarity.png" />
 
